@@ -1,0 +1,14 @@
+body {
+	background: #333;
+	height: 100%;
+}
+
+.webset-page {
+	box-sizing: border-box;
+	background: #FFF;
+	height: 11in;
+	width: 8.5in;
+	margin: 60px auto;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+	padding: 0.5in;
+}
