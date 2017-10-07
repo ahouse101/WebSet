@@ -9,7 +9,7 @@ let config = processOptions();
 runWebSet(config, (err) => {
 	if (err) return console.log(Chalk.red(err));
 	if (config.shouldWatch) {
-		let watcher = Chokidar.watch(config.inputPath, {
+		let watcher = Chokidar.watch(config.watchedFiles, {
 			persistent: true,
 			awaitWriteFinish: {
 				stabilityThreshold: 500
@@ -74,6 +74,12 @@ function processOptions() {
 	options.outputPath = Path.resolve(options.inputDir, options.outputName);
 	options.shouldPreview = args['p'];
 	options.shouldWatch = args['w'];
+	options.watchedFiles = [options.inputPath];
+	for (let fileIndex in args['_']) {
+		if (fileIndex !== 0) {
+			options.watchedFiles.push(args['_'][fileIndex]);
+		}
+	}
 	
 	return options;
 }
