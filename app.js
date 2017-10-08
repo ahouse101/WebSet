@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const parseArgs = require('minimist');
 const Fs = require('fs');
 const Path = require('path');

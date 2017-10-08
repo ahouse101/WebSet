@@ -4,8 +4,8 @@
 	"version": "0.1.0",
 	"description": "A tool to quickly create PDF documents from HTML.",
 	"main": "app.js",
-	"scripts": {
-		"start": "node app.js"
+	"bin": {
+		"webset": "app.js"
 	},
 	"repository": "ahouse101/WebSet",
 	"keywords": [],
