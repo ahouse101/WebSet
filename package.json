@@ -1,7 +1,7 @@
 {
 	"name": "webset",
 	"productName": "WebSet",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "A tool to quickly create PDF documents from HTML.",
 	"main": "app.js",
 	"bin": {
