@@ -2,7 +2,7 @@
 	"name": "webset",
 	"productName": "WebSet",
 	"version": "0.1.0",
-	"description": "Testing PDF creation.",
+	"description": "A tool to quickly create PDF documents from HTML.",
 	"main": "app.js",
 	"scripts": {
 		"start": "node app.js"
